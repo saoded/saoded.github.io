@@ -1,0 +1,87 @@
+#PedalPic {
+    width: 400px;
+    margin: auto;
+    border-radius: 10px;
+    padding: 20px;
+    border: 1px solid #888;
+    display: block;
+}
+
+#FractalPic {
+    width: 400px;
+    margin: auto;
+    border-radius: 10px;
+    padding: 20px;
+    border: 1px solid #888;
+    display: block;
+}
+
+.Title {
+    text-decoration: none;
+    color: inherit;
+    display: flex;
+    flex-flow: row;
+    justify-content: center;
+    align-items: center;
+    min-width: 200px;
+}
+
+.Title img {
+    height: 20px;
+    margin: 0 10px;
+}
+
+.Title h3 {
+    font-size: 2em;
+    font-weight: 300;
+}
+
+.project-title {
+    padding: 2px;
+    border-radius: 2px;
+    transition: 0.3s;
+}
+
+.project-title:hover {
+    cursor: default;
+    color: white;
+    background-color: #555;
+}
+
+#Projects {
+    clip-path: polygon(
+        0 9vw,
+        100% 0,
+        100% 100%,
+        0 calc(100% - 9vw)
+    );
+    -webkit-clip-path: polygon(
+        0 9vw,
+        100% 0,
+        100% 100%,
+        0 calc(100% - 9vw)
+    );
+}
+
+.project-input {
+    margin-top: 40px;
+    width: 170px;
+    height: 20px;
+    padding: 20px;
+    font-weight: 200;
+    font-size: 100%;
+    letter-spacing: 2px;
+    border: 1px solid #555;
+    border-radius: 2px;
+}
+
+.project-input:focus {
+    outline: none;
+}
+
+@media (max-width: 799px) {
+    #Projects {
+        clip-path: none;
+        -webkit-clip-path: none;
+    }
+}
