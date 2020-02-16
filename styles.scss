@@ -2,6 +2,7 @@
  .topnav {
   overflow: hidden;
   z-index: 2;
+  background-color: #ddd;
 }
 
 /* Style the links inside the navigation bar */
@@ -87,7 +88,7 @@ $sidenav_width: 160px;
 
 /* When you mouse over the navigation links, change their color */
 .sidenav a:hover {
-  color: #f1f1f1;
+  color: #ddd;
 }
 
 /* Style page content */
@@ -103,8 +104,8 @@ $sidenav_width: 160px;
 }
 
 body {
-  background-color: white;
-  color: black;
+  background-color: #ddd;
+  color: #111;
   font-size: 25px;
 }
 
