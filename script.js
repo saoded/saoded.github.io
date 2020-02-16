@@ -8,7 +8,14 @@ function myFunction() {
   }
 }
 
+var darkmode = false;
+
 function darkFunction() {
+  darkmode = !darkmode;
   var element = document.body;
   element.classList.toggle("dark-mode");
+  if (darkmode)
+    $('.darkmode-elem').html('&#9788;')
+  else
+    $('.darkmode-elem').html('&#9790;')
 } 
