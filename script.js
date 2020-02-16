@@ -25,5 +25,9 @@ function darkFunction() {
 } 
 
 function loadContact() {
-  $('under-nav').load('pages/contact.html')
+  $('.under-nav').load('pages/contact.html')
+}
+
+function loadHome() {
+  $('.under-nav').load('pages/landing.html')
 }
