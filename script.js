@@ -10,12 +10,20 @@ function myFunction() {
 
 var darkmode = false;
 
-function darkFunction() {
-  darkmode = !darkmode;
+function applyDarkmode() {
   var element = document.body;
   element.classList.toggle("dark-mode");
   if (darkmode)
     $('.darkmode-elem').html('&#9788;')
   else
     $('.darkmode-elem').html('&#9790;')
+}
+
+function darkFunction() {
+  darkmode = !darkmode;
+  applyDarkmode()
 } 
+
+function loadContact() {
+  $('under-nav').load('pages/contact.html')
+}
