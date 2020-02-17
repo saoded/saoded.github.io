@@ -24,16 +24,16 @@
 
   <div class="topnav" id="myTopnav">
     <a href="#home" class="active">Home</a>
-    <button onclick="loadHome()">Home</button>
-    <button onclick="loadProjects()">Professional Projects</button>
-    <button onclick="loadMisc()">Misc. Projects</button>
-    <button onclick="loadContact()">Contact</button>
+    <button onclick="loadHome(this)" class="active">Home</button>
+    <button onclick="loadProjects(this)">Professional Projects</button>
+    <button onclick="loadMisc(this)">Misc. Projects</button>
+    <button onclick="loadContact(this)">Contact</button>
 
     <button class="darkmode-elem" onclick="darkFunction()">&#9790;</button>
 
-    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    <button href="javascript:void(0);" class="icon" onclick="toggleTopnavCollapse()">
       <i class="fa fa-bars"></i>
-    </a>
+    </button>
   </div>
 
   <div class="under-nav">TO BE LOADED BY JQUERY</div>

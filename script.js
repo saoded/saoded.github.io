@@ -1,15 +1,9 @@
 /* Toggle between adding and removing the "responsive" class to topnav when the user clicks on the icon */
-function myFunction() {
-  var x = document.getElementById("myTopnav");
-  if (x.className === "topnav") {
-    x.className += " responsive";
-  } else {
-    x.className = "topnav";
-  }
+function toggleTopnavCollapse() {
+  $("#myTopnav").toggleClass("responsive");
 }
 
 var darkmode = false;
-loadHome();
 
 function applyDarkmode() {
   var element = document.body;
@@ -25,21 +19,31 @@ function darkFunction() {
   applyDarkmode();
 }
 
-function loadContact() {
+function activate_topnav(clickedBtn){
+  $('.topnav button').removeClass('active');
+  clickedBtn.classList.add('active');
+  $("#myTopnav").removeClass("responsive");
+}
+
+function loadContact(contactBtn) {
+  activate_topnav(contactBtn);
   $('.under-nav').load('pages/contact.html');
 }
 
-function loadHome() {
+function loadHome(homeBtn) {
+  activate_topnav(homeBtn);
   $('.under-nav').load('pages/landing.html');
 }
 
-function loadProjects() {
+function loadProjects(projectsBtn) {
+  activate_topnav(projectsBtn);
   $('.under-nav').load('pages/projects.html', () => {
     loadWebdev();
   });
 }
 
-function loadMisc() {
+function loadMisc(miscBtn) {
+  activate_topnav(miscBtn);
   $('.under-nav').load('pages/misc.html', () => {
     loadCinema();
   });
