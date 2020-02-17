@@ -9,6 +9,7 @@ function myFunction() {
 }
 
 var darkmode = false;
+loadHome();
 
 function applyDarkmode() {
   var element = document.body;
