@@ -25,33 +25,10 @@ function activate_topnav(clickedBtn) {
   $("#myTopnav").removeClass("responsive");
 }
 
-function loadContact(contactBtn) {
-  activate_topnav(contactBtn);
-  $("#under-nav").html('<object type="text/html" data="pages/contact.html" ></object>');
-}
-
-function loadHome(homeBtn) {
-  activate_topnav(homeBtn);
-  $("#under-nav").html('<object type="text/html" data="pages/landing.html" ></object>');
-}
-
 function loadUndernavContent(navBtn) {
   activate_topnav(navBtn);
   var subpagePath = `pages/${navBtn.getAttribute('id')}.html`;
   $("#under-nav").html(`<object type="text/html" data="${subpagePath}" ></object>`);
-}
-
-function loadProjects(projectsBtn) {
-  activate_topnav(projectsBtn);
-  $("#under-nav").html('<object type="text/html" data="pages/projects.html" ></object>');
-  loadWebdev();
-}
-
-function loadMisc(miscBtn) {
-  activate_topnav(miscBtn);
-  $('#under-nav').load('pages/misc.html', () => {
-    loadCinema();
-  });
 }
 
 function loadWebdev() {
