@@ -27,8 +27,9 @@ function activate_topnav(clickedBtn) {
 
 function loadUndernavContent(navBtn) {
   activate_topnav(navBtn);
+
   var subpagePath = `pages/${navBtn.getAttribute('id')}.html`;
-  $("#under-nav").html(`<object type="text/html" data="${subpagePath}" ></object>`);
+  $("#under-nav").load(subpagePath);
 }
 
 function loadWebdev() {
