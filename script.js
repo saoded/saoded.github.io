@@ -50,7 +50,7 @@ function loadWebdev() {
 }
 
 function loadPython() {
-  $('.besides-sidenav').load('pages/projects/webdev.html');
+  $('.besides-sidenav').load('pages/projects/python.html');
 }
 
 function loadCinema() {
