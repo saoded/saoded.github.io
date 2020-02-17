@@ -5,7 +5,7 @@
 }
 
 /* Style the links inside the navigation bar */
-.topnav button {
+.navbtn {
   float: left;
   display: block;
   text-align: center;
@@ -26,12 +26,12 @@
 
 /* Change the color of links on hover */
 .topnav button:hover {
-  background-color: #40A85599;
+  background-color: #40a85599;
 }
 
 /* Add an active class to highlight the current page */
 .topnav button.active {
-  background-color: #40A844;
+  background-color: #40a844;
 }
 
 /* Hide the link that should open and close the topnav on small screens */
@@ -39,15 +39,12 @@
   display: none;
 }
 
-/* Add responsiveness - will automatically display the navbar vertically instead of horizontally on screens less than 500 pixels */
-@media screen and (max-width: 500px) {
-  .navbar button {
-    float: none;
-    display: block;
-  }
-}
 /* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
 @media screen and (max-width: 600px) {
+  .topnav button {
+    height: 40px;
+  }
+
   .topnav button:not(:first-child) {
     display: none;
   }
