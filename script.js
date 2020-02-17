@@ -9,9 +9,9 @@ function applyDarkmode() {
   var element = document.body;
   element.classList.toggle("dark-mode");
   if (darkmode)
-    $('.darkmode-elem').html('&#9788;');
+    $('#darkmode-elem').html('&#9788;');
   else
-    $('.darkmode-elem').html('&#9790;');
+    $('#darkmode-elem').html('&#9790;');
 }
 
 function darkFunction() {

@@ -137,8 +137,11 @@ body {
   color: #ccc;
 }
 
-.darkmode-elem {
+#darkmode-elem {
+  font-size: 30px;
   text-align: center;
+  width: 60px;
+  border-radius: 60px;
 }
 
 /*# sourceMappingURL=styles.css.map */
