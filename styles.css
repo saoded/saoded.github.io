@@ -70,7 +70,7 @@
     width: auto;
   }
 
-  .topnav.responsive button {
+  .topnav.responsive .navbtn {
     float: none;
     display: block;
     text-align: left;
