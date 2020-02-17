@@ -38,6 +38,24 @@ function loadProjects() {
   });
 }
 
+function loadMisc() {
+  $('.under-nav').load('pages/misc.html', () => {
+    loadCinema();
+  });
+}
+
 function loadWebdev() {
   $('.besides-sidenav').load('pages/projects/webdev.html');
+}
+
+function loadPython() {
+  $('.besides-sidenav').load('pages/projects/webdev.html');
+}
+
+function loadCinema() {
+  $('.besides-sidenav').load('pages/misc/cinema.html');
+}
+
+function loadImprov() {
+  $('.besides-sidenav').load('pages/misc/improv.html');
 }
