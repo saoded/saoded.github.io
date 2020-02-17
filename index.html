@@ -23,10 +23,10 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
   <div class="topnav" id="myTopnav">
-    <button onclick="loadHome(this)" class="active navbtn">Home</button>
-    <button onclick="loadProjects(this)" class="navbtn">Professional Projects</button>
-    <button onclick="loadMisc(this)" class="navbtn">Misc. Projects</button>
-    <button onclick="loadContact(this)" class="navbtn">Contact</button>
+    <button id="landing" onclick="loadUndernavContent(this)" class="active navbtn">Home</button>
+    <button id="projects" onclick="loadUndernavContent(this)" class="navbtn">Professional Projects</button>
+    <button id="misc" onclick="loadUndernavContent(this)" class="navbtn">Misc. Projects</button>
+    <button id="contact" onclick="loadUndernavContent(this)" class="navbtn">Contact</button>
 
     <button id="darkmode-elem" class="navbtn" onclick="darkFunction()">&#9790;</button>
 
@@ -35,7 +35,7 @@
     </button>
   </div>
 
-  <div class="under-nav">TO BE LOADED BY JQUERY</div>
+  <div id="under-nav">TO BE LOADED BY JQUERY</div>
 </body>
 
 </html>

@@ -8,7 +8,6 @@
 
 /* Style the links inside the navigation bar */
 .navbtn {
-  float: left;
   display: block;
   text-align: center;
   text-decoration: none;
@@ -20,6 +19,10 @@
   // word-wrap: break-word;
   border-radius: 5px;
   color: inherit;
+}
+
+.topnav .navbtn{
+  float: left;
 }
 
 .topnav button.icon {
@@ -46,13 +49,13 @@
 
 /* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
 @media screen and (max-width: 600px) {
-  .topnav button {
+  .topnav .navbtn {
     height: 40px;
   }
-  .topnav button:not(:first-child) {
+  .topnav .navbtn:not(:first-child) {
     display: none;
   }
-  .topnav button.icon {
+  .topnav .navbtn.icon {
     float: right;
     display: block;
   }
@@ -81,7 +84,7 @@ $sidenav_width: 160px;
 
 /* The sidebar menu */
 .sidenav {
-  height: 100%; /* Full-height: remove this if you want "auto" height */
+  // height: 100%; /* Full-height: remove this if you want "auto" height */
   width: $sidenav_width; /* Set the width of the sidebar */
   position: fixed; /* Fixed Sidebar (stay in place on scroll) */
   z-index: 1; /* Stay on top */

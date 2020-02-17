@@ -19,7 +19,7 @@ function darkFunction() {
   applyDarkmode();
 }
 
-function activate_topnav(clickedBtn){
+function activate_topnav(clickedBtn) {
   $('.topnav button').removeClass('active');
   clickedBtn.classList.add('active');
   $("#myTopnav").removeClass("responsive");
@@ -27,24 +27,29 @@ function activate_topnav(clickedBtn){
 
 function loadContact(contactBtn) {
   activate_topnav(contactBtn);
-  $('.under-nav').load('pages/contact.html');
+  $("#under-nav").html('<object type="text/html" data="pages/contact.html" ></object>');
 }
 
 function loadHome(homeBtn) {
   activate_topnav(homeBtn);
-  $('.under-nav').load('pages/landing.html');
+  $("#under-nav").html('<object type="text/html" data="pages/landing.html" ></object>');
+}
+
+function loadUndernavContent(navBtn) {
+  activate_topnav(navBtn);
+  var subpagePath = `pages/${navBtn.getAttribute('id')}.html`;
+  $("#under-nav").html(`<object type="text/html" data="${subpagePath}" ></object>`);
 }
 
 function loadProjects(projectsBtn) {
   activate_topnav(projectsBtn);
-  $('.under-nav').load('pages/projects.html', () => {
-    loadWebdev();
-  });
+  $("#under-nav").html('<object type="text/html" data="pages/projects.html" ></object>');
+  loadWebdev();
 }
 
 function loadMisc(miscBtn) {
   activate_topnav(miscBtn);
-  $('.under-nav').load('pages/misc.html', () => {
+  $('#under-nav').load('pages/misc.html', () => {
     loadCinema();
   });
 }
